@@ -1,59 +1,58 @@
 <template>
   <div class="home-canvas">
     <div class="content">
-      <label id="title">Tecnologias</label>
-      <label @mouseenter=" contentWeb = true"  >
+      <label class="title">Tecnologias</label>
+      <label class="subtitle label">
         Desenvolvimento web
       </label>
-      <div v-show="contentWeb" @mouseleave=" contentWeb = false">
-        <div>Java</div>
-        <div>Javascript</div>
-        <div>Ruby on Rails</div>
+      <div class="">
+        <label>Java</label>
+        <label>Javascript</label>
+        <label>Ruby on Rails</label>
       </div>
 
-      <label @mouseenter=" contentDesktop = true">
+      <label class="subtitle label">
         Desenvolvimento desktop
       </label>
-      <div @mouseleave=" contentDesktop = false" v-show="contentDesktop">
-        <div>Java</div>
-        <div>C,C++,C#</div>
-        <div>Ruby</div>
-        <div>Python</div>
+      <div class="">
+        <label>Java</label>
+        <label>C,C++,C#</label>
+        <label>Ruby</label>
+        <label>Python</label>
       </div>
 
-      <label @mouseenter=" contentOthers = true">
+      <label class="subtitle label">
         Outros
       </label>
-      <div @mouseleave=" contentOthers = false" v-show="contentOthers">
-        <div>DDD</div>
-        <div>Microservices</div>
-        <div>Docker</div>
-        <div>Build</div>
-        <div>Versionamento</div>
-        <div>Deploy</div>
-        <div>Documentação</div>
+      <div class="" >
+        <label>DDD</label>
+        <label>Microservices</label>
+        <label>Docker</label>
+        <label>Build</label>
+        <label>Versionamento</label>
+        <label>Deploy</label>
+        <label>Documentação</label>
       </div>
 
-      <label @mouseenter=" contentProfessional = true">Experiências profissionais</label>
-      <div @mouseleave=" contentProfessional = false" v-show="contentProfessional">
-        <div>ISGH - IsSaude</div>
-        <div>MEI</div>
-        <div>Fortaleza Serviços</div>
+      <label class="subtitle label">Experiências profissionais</label>
+      <div class="">
+        <label>ISGH - IsSaude</label>
+        <label>MEI</label>
+        <label>Fortaleza Serviços</label>
         
       </div>
 
-      <label @mouseenter=" contentEducational = true">Educação</label>
-      <div @mouseleave=" contentEducational = false" v-show="contentEducational">
-        <div>UnB - Universidade de Brasília</div>
-        <div>Trybe</div>
-        <div>Técnico em informática</div>
-        <div>Cursos de programação</div>
+      <label class="subtitle label" >Educação</label>
+      <div class="">
+        <label>UnB - Universidade de Brasília</label>
+        <label>Técnico em informática</label>
+        <label>Cursos de programação</label>
         
       </div>
 
-      <label @mouseenter=" contentProjects = true">Projetos</label>
-      <div @mouseleave=" contentProjects = false" v-show="contentProjects">
-        <div>GBG Gerência</div>
+      <label class="subtitle label">Projetos</label>
+      <div class="" >
+        <label>GBG Gerência</label>
         
       </div>
 
@@ -72,15 +71,22 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  
+   
 }
-#title{
-  font-size: 1.7rem;
+.title{
+  padding-top: 1rem;
   padding-bottom: 1rem;
 }
+.subtitle{
+  padding-top: 5rem;
+  padding-bottom: 1rem;
+  font: bold, italic;
+  font-size: 1.5rem;
+}
+
 p, ul {
   padding: 1.5rem;
-  transition: width 2s;
+  
 }
 label {
  font-style: italic;
@@ -98,20 +104,9 @@ export default defineComponent({
   
   },
   setup(){
-    const contentWeb = ref<boolean>(false)
-    const contentDesktop = ref<boolean>(false)
-    const contentOthers = ref<boolean>(false)
-    const contentProfessional = ref<boolean>(false)
-    const contentEducational = ref<boolean>(false)
-    const contentProjects = ref<boolean>(false)
-
+    
     return{
-      contentWeb,
-      contentDesktop,
-      contentOthers,
-      contentProfessional,
-      contentEducational,
-      contentProjects
+     
     }
   }
 });

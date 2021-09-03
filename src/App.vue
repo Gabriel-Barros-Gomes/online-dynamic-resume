@@ -1,22 +1,25 @@
 <template>
-  <div id="app">
+  <div class="app">
 
-    <div id="nav">
+    <div class="nav">
       <router-link to="/">Home</router-link>
     </div>
 
-    <div id="body">
+    <div class="body">
       <router-view/>
     </div>
 
   </div>  
 </template>
 <style >
-#body{
+.app{
+  background-color: rgb(230, 230, 230);
+}
+.body{
   display: grid;
   text-align: center;
   margin-top: 5rem;
   margin-bottom: 5rem;
-  font-family: Verdana, Arial, Helvetica, sans-serif;
 }
 </style>
+ 
