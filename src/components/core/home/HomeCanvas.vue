@@ -44,8 +44,7 @@
 
       <label class="subtitle label" >Educação</label>
       <div class="">
-        <label>UnB - Universidade de Brasília</label>
-        <label>Técnico em informática</label>
+        <label >Técnico em informática</label>
         <label>Cursos de programação</label>
         
       </div>
