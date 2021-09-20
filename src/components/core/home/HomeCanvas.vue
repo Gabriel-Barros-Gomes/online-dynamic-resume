@@ -1,97 +1,71 @@
 <template>
   <div class="home-canvas">
-    <div class="content">
-      <label class="title">Tecnologias</label>
-      <label class="subtitle label">
+     <main
+      className=" flex flex-col items-center justify-center w-full flex-1 px-20 text-center"
+    >
+    <div class="content mb-6">
+      <label class="title text-4xl font-bold">Tecnologias</label>
+
+      <div class=" group">
+      <label class="subtitle text-3xl block mt-1 mb-3 text-green-700 ">
         Desenvolvimento web
       </label>
-      <div class="">
-        <label>Java</label>
-        <label>Javascript</label>
-        <label>Ruby on Rails</label>
+      <div class="text-web">
+        <label class="text-2xl block mt-1 mb-3">Java</label>
+        <label class="text-2xl block mt-1 mb-3">Javascript</label>
+        <label class="text-2xl block mt-1 mb-3">Ruby on Rails</label>
+      </div>
       </div>
 
-      <label class="subtitle label">
+      <label class="subtitle text-3xl block mt-1 mb-3 text-green-700">
         Desenvolvimento desktop
       </label>
-      <div class="">
-        <label>Java</label>
-        <label>C,C++,C#</label>
-        <label>Ruby</label>
-        <label>Python</label>
+      <div class=" text-desk">
+        <label class="text-2xl block mt-1 mb-3">Java</label>
+        <label class="text-2xl block mt-1 mb-3">C, C++, C#</label>
+        <label class="text-2xl block mt-1 mb-3">Ruby</label>
+        <label class="text-2xl block mt-1 mb-3">Python</label>
       </div>
 
-      <label class="subtitle label">
+      <label class="subtitle text-3xl block mt-1 mb-3 text-green-700 ">
         Outros
       </label>
-      <div class="" >
-        <label>DDD</label>
-        <label>Microservices</label>
-        <label>Docker</label>
-        <label>Build</label>
-        <label>Versionamento</label>
-        <label>Deploy</label>
-        <label>Documentação</label>
+      <div class="text-other" >
+        <label class="text-2xl block mt-1 mb-3">DDD</label>
+        <label class="text-2xl block mt-1 mb-3">Microservices</label>
+        <label class="text-2xl block mt-1 mb-3">Docker</label>
+        <label class="text-2xl block mt-1 mb-3">Build</label>
+        <label class="text-2xl block mt-1 mb-3">Versionamento</label>
+        <label class="text-2xl block mt-1 mb-3">Deploy</label>
+        <label class="text-2xl block mt-1 mb-3">Documentação</label>
       </div>
 
-      <label class="subtitle label">Experiências profissionais</label>
-      <div class="">
-        <label>ISGH - IsSaude</label>
-        <label>MEI</label>
-        <label>Fortaleza Serviços</label>
+      <label class="subtitle text-3xl block mt-1 mb-3 text-green-700">Experiências profissionais</label>
+      <div class="text-experience">
+        <label class="text-2xl block mt-1 mb-3">ISGH - IsSaude</label>
+        <label class="text-2xl block mt-1 mb-3">MEI</label>
+        <label class="text-2xl block mt-1 mb-3">Fortaleza Serviços</label>
         
       </div>
 
-      <label class="subtitle label" >Educação</label>
-      <div class="">
-        <label >Técnico em informática</label>
-        <label>Cursos de programação</label>
+      <label class="subtitle text-3xl block mt-1 mb-3 text-green-700" >Educação</label>
+      <div class="text-education">
+        <label class="text-2xl block mt-1 mb-3" >Técnico em informática</label>
+        <label class="text-2xl block mt-1 mb-3">Cursos de programação</label>
         
       </div>
 
-      <label class="subtitle label">Projetos</label>
-      <div class="" >
-        <label>GBG Gerência</label>
+      <label class="subtitle text-3xl block mt-1 mb-3 text-green-700">Projetos</label>
+      <div class="text-projects" >
+        <label class="text-2xl block mt-1 mb-3">GBG Gerência</label>
         
       </div>
 
 
     </div>
-
+     </main>
   </div>
 </template>
-
-<style scoped>
-.home-canvas{
-  padding: 5rem;
-}
-.content{
-  font-size: 1.2rem;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-   
-}
-.title{
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-.subtitle{
-  padding-top: 5rem;
-  padding-bottom: 1rem;
-  font: bold, italic;
-  font-size: 1.5rem;
-}
-
-p, ul {
-  padding: 1.5rem;
-  
-}
-label {
- font-style: italic;
- padding: 1rem;
-}
-</style>
 
 
 <script lang="ts">
@@ -104,6 +78,9 @@ export default defineComponent({
   },
   setup(){
     
+
+ 
+
     return{
      
     }

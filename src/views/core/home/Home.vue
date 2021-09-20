@@ -1,6 +1,6 @@
 <template>
-  <div class="home">
-    <div class="card">
+  <div class="home p-5">
+    <div class="card rounded-md z-40 shadow-md bg-gray-200">
       <div class="content">
         <div class="home-header">
           <HomeHeader />
@@ -9,11 +9,10 @@
         <div class="home-canvas">
           <HomeCanvas />
         </div>
-
-        <div class="home-footer">
-          <HomeFooter />
-        </div>
       </div>
+    </div>
+    <div class="home-footer">
+      <HomeFooter />
     </div>
   </div>
 </template>
@@ -34,13 +33,4 @@ export default defineComponent({
 });
 </script>
 
-<style scoped>
-.home{
-  padding-right: 5rem;
-  padding-left: 5rem;
-  
-}
-.card{
-  background-color: rgb(255, 255, 255);
-}
-</style>
+
