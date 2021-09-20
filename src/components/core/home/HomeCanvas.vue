@@ -1,92 +1,71 @@
 <template>
   <div class="home-canvas">
-    <div class="content">
-      <label id="title">Tecnologias</label>
-      <label @mouseenter=" contentWeb = true"  >
+     <main
+      className=" flex flex-col items-center justify-center w-full flex-1 px-20 text-center"
+    >
+    <div class="content mb-6">
+      <label class="title text-4xl font-bold">Tecnologias</label>
+
+      <div class=" group">
+      <label class="subtitle text-3xl block mt-1 mb-3 text-green-700 ">
         Desenvolvimento web
       </label>
-      <div v-show="contentWeb" @mouseleave=" contentWeb = false">
-        <div>Java</div>
-        <div>Javascript</div>
-        <div>Ruby on Rails</div>
+      <div class="text-web">
+        <label class="text-2xl block mt-1 mb-3">Java</label>
+        <label class="text-2xl block mt-1 mb-3">Javascript</label>
+        <label class="text-2xl block mt-1 mb-3">Ruby on Rails</label>
+      </div>
       </div>
 
-      <label @mouseenter=" contentDesktop = true">
+      <label class="subtitle text-3xl block mt-1 mb-3 text-green-700">
         Desenvolvimento desktop
       </label>
-      <div @mouseleave=" contentDesktop = false" v-show="contentDesktop">
-        <div>Java</div>
-        <div>C,C++,C#</div>
-        <div>Ruby</div>
-        <div>Python</div>
+      <div class=" text-desk">
+        <label class="text-2xl block mt-1 mb-3">Java</label>
+        <label class="text-2xl block mt-1 mb-3">C, C++, C#</label>
+        <label class="text-2xl block mt-1 mb-3">Ruby</label>
+        <label class="text-2xl block mt-1 mb-3">Python</label>
       </div>
 
-      <label @mouseenter=" contentOthers = true">
+      <label class="subtitle text-3xl block mt-1 mb-3 text-green-700 ">
         Outros
       </label>
-      <div @mouseleave=" contentOthers = false" v-show="contentOthers">
-        <div>DDD</div>
-        <div>Microservices</div>
-        <div>Docker</div>
-        <div>Build</div>
-        <div>Versionamento</div>
-        <div>Deploy</div>
-        <div>Documentação</div>
+      <div class="text-other" >
+        <label class="text-2xl block mt-1 mb-3">DDD</label>
+        <label class="text-2xl block mt-1 mb-3">Microservices</label>
+        <label class="text-2xl block mt-1 mb-3">Docker</label>
+        <label class="text-2xl block mt-1 mb-3">Build</label>
+        <label class="text-2xl block mt-1 mb-3">Versionamento</label>
+        <label class="text-2xl block mt-1 mb-3">Deploy</label>
+        <label class="text-2xl block mt-1 mb-3">Documentação</label>
       </div>
 
-      <label @mouseenter=" contentProfessional = true">Experiências profissionais</label>
-      <div @mouseleave=" contentProfessional = false" v-show="contentProfessional">
-        <div>ISGH - IsSaude</div>
-        <div>MEI</div>
-        <div>Fortaleza Serviços</div>
+      <label class="subtitle text-3xl block mt-1 mb-3 text-green-700">Experiências profissionais</label>
+      <div class="text-experience">
+        <label class="text-2xl block mt-1 mb-3">ISGH - IsSaude</label>
+        <label class="text-2xl block mt-1 mb-3">MEI</label>
+        <label class="text-2xl block mt-1 mb-3">Fortaleza Serviços</label>
         
       </div>
 
-      <label @mouseenter=" contentEducational = true">Educação</label>
-      <div @mouseleave=" contentEducational = false" v-show="contentEducational">
-        <div>UnB - Universidade de Brasília</div>
-        <div>Trybe</div>
-        <div>Técnico em informática</div>
-        <div>Cursos de programação</div>
+      <label class="subtitle text-3xl block mt-1 mb-3 text-green-700" >Educação</label>
+      <div class="text-education">
+        <label class="text-2xl block mt-1 mb-3" >Técnico em informática</label>
+        <label class="text-2xl block mt-1 mb-3">Cursos de programação</label>
         
       </div>
 
-      <label @mouseenter=" contentProjects = true">Projetos</label>
-      <div @mouseleave=" contentProjects = false" v-show="contentProjects">
-        <div>GBG Gerência</div>
+      <label class="subtitle text-3xl block mt-1 mb-3 text-green-700">Projetos</label>
+      <div class="text-projects" >
+        <label class="text-2xl block mt-1 mb-3">GBG Gerência</label>
         
       </div>
 
 
     </div>
-
+     </main>
   </div>
 </template>
-
-<style scoped>
-.home-canvas{
-  padding: 5rem;
-}
-.content{
-  font-size: 1.2rem;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  
-}
-#title{
-  font-size: 1.7rem;
-  padding-bottom: 1rem;
-}
-p, ul {
-  padding: 1.5rem;
-  transition: width 2s;
-}
-label {
- font-style: italic;
- padding: 1rem;
-}
-</style>
 
 
 <script lang="ts">
@@ -98,20 +77,12 @@ export default defineComponent({
   
   },
   setup(){
-    const contentWeb = ref<boolean>(false)
-    const contentDesktop = ref<boolean>(false)
-    const contentOthers = ref<boolean>(false)
-    const contentProfessional = ref<boolean>(false)
-    const contentEducational = ref<boolean>(false)
-    const contentProjects = ref<boolean>(false)
+    
+
+ 
 
     return{
-      contentWeb,
-      contentDesktop,
-      contentOthers,
-      contentProfessional,
-      contentEducational,
-      contentProjects
+     
     }
   }
 });

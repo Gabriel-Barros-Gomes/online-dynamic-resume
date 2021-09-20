@@ -1,22 +1,17 @@
 <template>
   <div class="home-footer">
+    <main
+      className=" flex flex-col items-center justify-center w-full flex-1 px-20 text-center"
+    >
 
-  <div>
-    <label>Currículo dinâmico desenvolvido por Gabriel Barros Gomes a fim de demonstrar habilidades na área correlatada. </label>
+  <div class="mt-5 mb-5">
+    <label class="text-3x1 ">Currículo dinâmico desenvolvido por Gabriel Barros Gomes a fim de demonstrar habilidades na área correlatada. </label>
   </div>
   
-    
+    </main>
   </div>
 </template>
 
-<style scoped>
-.home-footer{
-  position: absolute,fixed;
-  float: right;
-  bottom: 0%;
-  
-}
-</style>
 
 <script lang="ts">
 import { defineComponent } from 'vue';
