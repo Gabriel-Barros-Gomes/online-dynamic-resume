@@ -1,6 +1,6 @@
 <template>
   <div class="home p-5">
-    <div class="card rounded-md z-40 shadow-md bg-gray-200">
+    <div class="card rounded-md z-40 shadow-md bg-white">
       <div class="content">
         <div class="home-header">
           <HomeHeader />
